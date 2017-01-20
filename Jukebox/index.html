@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jukebox</title>
+
+	<!-- Import JQuery -->
+	<script
+  	src="https://code.jquery.com/jquery-3.1.1.min.js"
+  	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  	crossorigin="anonymous">
+  	</script>
+
+  	<!-- Import my Javascript -->
+  	<script src="js/app.js" type="text/javascript"></script>
+
+  	<!-- Import my style sheet -->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1 style="text-align: center;">Jukebox</h1>
+	<hr>
+
+	<div class="songs">
+		<div song="1">
+			<p>Through The Storm</p>
+			<audio>
+				<source src="music/Pipe_Choir_-_Through_The_Storm.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<div song="2">
+			<p>Dymaxion</p>
+			<audio>
+				<source src="music/The_Hathaway_Family_Plot_-_01_-_Dymaxion.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<div song="3">
+			<p>Livin the Lost Boy Life</p>
+			<audio>
+				<source src="music/The_RocknRoll_Hi-Fives_-_01_-_Livin_the_Lost_Boy_Life.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="audio-controls">
+		<img src="images/play.png" id="playBtn">
+		<img src="images/pause.png" id="pauseBtn">
+		<img src="images/stop.png" id="stopBtn">
+	</div>
+	
+	<hr>
+
+	<button id="addSongBtn">Add Song</button>
+	<input type="text" name="title" placeholder="Title" id="inputTitle">
+	<input type="text" name="url" placeholder="music.com/mysong.mp3" id="inputURL"> 
+	<p>*You can use this URL to test: http://www.ampslam.com/songs/01%20Cold%20Bones.mp3</p>
+</body>
+</html>

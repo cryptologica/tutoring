@@ -1,0 +1,26 @@
+/* Select all <img> that are children of class=audio-controls.
+   Stylizes the Play/Pause/Stop buttons. */
+.audio-controls > img {
+	width: 40px;
+	height: auto;
+	border-radius: 100px;
+	margin-left: 10px;
+	border: 3px solid black;
+	cursor: pointer;
+}
+
+/* Hover color for Play/Pause/Stop buttons */
+.audio-controls > img:hover {
+	border-color: gray;
+}
+
+.songs > div:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+.songs > div > p {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
